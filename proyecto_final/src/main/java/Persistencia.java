@@ -32,7 +32,12 @@ public class Persistencia {
         if (productos.containsKey(producto.getClave())) {
             return false;
         }
-
+/*
+        La clave debe tener 2 letras y 3 números exactamente
+         */
+        if (producto.getClave() == null || !producto.getClave().matches("^[a-zA-Z]{2}\\d{3}$")) {
+            return false;
+        }
         /* Clave de 2 caracteres y 3 digitos
         No agregar producto si no tiene nombre ni tipo
         isEmpty verifica si está vació y || significa qque si falla uno se rechaza
@@ -79,6 +84,13 @@ No agregar producto si la unidad no es "KG, L, PZ"
     
      */
     public boolean actualizarProducto(Producto producto) {
+
+        /*
+        La clave debe tener 2 letras y 3 números exactamente
+         */
+        if (producto.getClave() == null || !producto.getClave().matches("^[a-zA-Z]{2}\\d{3}$")) {
+            return false;
+        }
 
         /*
         Actualizar producto
