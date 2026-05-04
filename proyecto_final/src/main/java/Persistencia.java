@@ -6,8 +6,7 @@ import java.util.HashMap;
 import com.mycompany.abarrotesobjetosdominio_00000278938.MovimientoGranel;
 import com.mycompany.abarrotesobjetosdominio_00000278938.ProductoGranel;
 import com.mycompany.abarrotesobjetosdominio_00000278938.Movimiento;
-
-//import com.mycompany.modelo.Producto;
+import com.mycompany.abarrotesobjetosdominio_00000278938.Producto;
 /**
  *
  * @author Acer
